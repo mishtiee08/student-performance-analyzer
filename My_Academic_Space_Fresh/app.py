@@ -117,24 +117,44 @@ def ensure_model():
 
 # ----------------------- STYLE -----------------------
 
+
 st.markdown("""
 <style>
-.stApp { background: #F8F6FC; }
-[data-testid="stSidebar"] { background: #EEE8F7; }
-h1, h2, h3 { color: #604080; }
+.stApp {
+    background: #241832;
+    color: #F7F1FF;
+}
+
+[data-testid="stSidebar"] {
+    background: #352449;
+}
+
+h1, h2, h3, p, label {
+    color: #F7F1FF;
+}
+
 div[data-testid="stMetric"] {
-    background: white; border: 1px solid #E9DFF4;
-    padding: 16px; border-radius: 14px;
+    background: #3B2A50;
+    border: 1px solid #7952A0;
+    padding: 16px;
+    border-radius: 14px;
 }
-.stButton > button, .stFormSubmitButton > button {
-    background: #7952A0; color: white; border: 0;
-    border-radius: 10px; min-height: 2.5rem;
+
+.stButton > button,
+.stFormSubmitButton > button {
+    background: #9166BB;
+    color: white;
+    border: 0;
+    border-radius: 10px;
 }
-.stButton > button:hover, .stFormSubmitButton > button:hover {
-    background: #604080; color: white;
+
+.stButton > button:hover {
+    background: #A982D0;
+    color: white;
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 with st.sidebar:
     st.title("🎓 SPA")
